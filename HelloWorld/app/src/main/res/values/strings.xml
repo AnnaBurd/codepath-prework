@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HelloWorld</string>
     <string name="greeting_default">Hello from Anna!</string>
-    <string name="greeting_android">Android is awesome!</string>
+    <string name="greeting_android">Android is awesome &#x1F60D;!</string>
     <string name="hint_greeting">Enter your text here</string>
     <string name="buttonChangeText">Change text</string>
     <string name="buttonChangeColor">Change color</string>
