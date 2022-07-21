@@ -1,8 +1,11 @@
 package my.anna.helloworld
 
+import android.app.Activity
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -27,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         // Tap on a button changes text, background and buttons colors
         findViewById<Button>(R.id.buttonChangeColor).setOnClickListener {
             Log.i("MyAppLog", "Tapped on change color button")
+
+            editText.hideKeyboard()
+
             colorManager.changeColors()
         }
 
@@ -36,6 +42,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.buttonChangeText).setOnClickListener {
 
             Log.i("MyAppLog", "Tapped on change text button")
+
+            editText.hideKeyboard()
 
             // Greet Android
             if (editText.text.isBlank()) {
@@ -67,7 +75,15 @@ class MainActivity : AppCompatActivity() {
             editText.isFocusable = false
             editText.isFocusableInTouchMode = true
             editText.isFocusable = true
+
+            editText.hideKeyboard()
         }
+    }
+
+
+    fun View.hideKeyboard() {
+        val inputMethodManager = context.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
     }
 
 }
