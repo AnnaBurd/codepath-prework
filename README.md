@@ -7,7 +7,7 @@ By experimenting with source files for this app you can learn how to change user
 
 ### App Walk-through
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://github.com/AnnaBurd/AnnaBurd/blob/96f0c0e64a44b3a1076657649449bebd2941a1e4/preview.gif" width=200><br>
 
 
 ### Required User Stories
