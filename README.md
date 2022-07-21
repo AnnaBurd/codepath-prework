@@ -5,7 +5,7 @@ Hello World App is a pre-work project for the Codepath Intro to Mobile App Devel
 By experimenting with source files for this app you can learn how to change user interface colors, create nicely-looking buttons with rounded corners, work with user text input, and use emojis in strings.
 
 
-### App Walk-though
+### App Walk-through
 
 <img src="YOUR_GIF_URL_HERE" width=200><br>
 
